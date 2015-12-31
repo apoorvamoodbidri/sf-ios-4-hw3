@@ -60,7 +60,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add nos" id="VHb-XS-2IW">
                             <connections>
-                                <segue destination="2jM-hN-TRu" kind="show" id="PgB-r0-fmS"/>
+                                <segue destination="0nD-oA-lRY" kind="show" id="oDM-Dl-yKc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -75,6 +75,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="700.5" y="354.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="bgD-lo-Nzo">
+            <objects>
+                <viewController id="0nD-oA-lRY" customClass="SecondViewController" customModule="assignment3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u2e-S1-3oi"/>
+                        <viewControllerLayoutGuide type="bottom" id="fk9-ML-qWR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J4Q-eg-Of9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cg-RB-8ZO">
+                                <rect key="frame" x="79" y="234" width="217" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmO-2y-6US">
+                                <rect key="frame" x="164" y="319" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="clickOnAdd:" destination="0nD-oA-lRY" eventType="touchUpInside" id="alO-Om-P2i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS7-5X-h1m">
+                                <rect key="frame" x="152" y="176" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="HS7-5X-h1m" id="4tI-3l-W1G"/>
+                        <outlet property="numberField" destination="6cg-RB-8ZO" id="a33-1F-wSk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBz-q2-3KP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1157.5" y="354.5"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="bUz-gn-8C1">
@@ -119,51 +163,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWT-eF-9XU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="700.5" y="1183.5"/>
-        </scene>
-        <!--Second View Controller-->
-        <scene sceneID="hq7-GM-Iqd">
-            <objects>
-                <viewController id="2jM-hN-TRu" customClass="SecondViewController" customModule="assignment3" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gJz-km-Mo3"/>
-                        <viewControllerLayoutGuide type="bottom" id="WGs-hw-Znz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AU4-xV-HPu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RnC-XI-dew">
-                                <rect key="frame" x="20" y="219" width="335" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxD-NK-Xhz">
-                                <rect key="frame" x="125" y="313" width="116" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cza-BK-n7s">
-                                <rect key="frame" x="164" y="417" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Add"/>
-                                <connections>
-                                    <action selector="addOnClick:" destination="2jM-hN-TRu" eventType="touchUpInside" id="ZN1-Ml-Cwg"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="addOnClick" destination="cza-BK-n7s" id="RSo-cQ-vSa"/>
-                        <outlet property="numberInput" destination="RnC-XI-dew" id="dDG-oW-4OY"/>
-                        <outlet property="sumLabel" destination="NxD-NK-Xhz" id="baK-RC-qhj"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IEG-TY-XOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1246.5" y="354.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KoX-ND-nB3">

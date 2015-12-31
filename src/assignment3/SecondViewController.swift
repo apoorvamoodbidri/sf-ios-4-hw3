@@ -2,7 +2,7 @@
 //  SecondViewController.swift
 //  assignment3
 //
-//  Created by Apoorva Moodbidri on 12/29/15.
+//  Created by Apoorva Moodbidri on 12/30/15.
 //  Copyright © 2015 Apoorva Moodbidri. All rights reserved.
 //
 
@@ -10,32 +10,27 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-   // code for textfield
+    var sum = 0
     
-    @IBOutlet weak var numberInput: UITextField!
-    
-   // code for label
+    @IBOutlet weak var numberField: UITextField!
     
     
-    @IBOutlet weak var sumLabel: UILabel!
+    
+    @IBOutlet weak var displayLabel: UILabel!
     
     
-    // code for button
-    
-    @IBAction func addOnClick(sender: AnyObject) {
-       /* let sum:Int? = Int(numberInput.text!)
+    @IBAction func clickOnAdd(sender: AnyObject) {
         
-        while sum != 0
-        {
-            self.numberInput.text =
-        }
-        */
+        var number:Int? = Int(numberField.text!)
+        
+           sum = sum + number!
+           //self.displayLabel.text = String(sum)
+           self.numberField.text = String(sum)
+           number = Int(numberField.text!)
     }
     
-   
     
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
