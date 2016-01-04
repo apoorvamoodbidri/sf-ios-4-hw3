@@ -1,40 +1,50 @@
 //
 //  ThirdViewController.swift
-//  assignment3
+//  hw3
 //
-//  Created by Apoorva Moodbidri on 12/29/15.
-//  Copyright © 2015 Apoorva Moodbidri. All rights reserved.
+//  Created by Apoorva Moodbidri on 1/4/16.
+//  Copyright © 2016 Apoorva Moodbidri. All rights reserved.
 //
 
 import UIKit
 
 class ThirdViewController: UIViewController {
-    
-    
-    
+    // code for text field
     @IBOutlet weak var numberField: UITextField!
     
-    
+    // code for label
     @IBOutlet weak var displayLabel: UILabel!
     
+    // code for button
     
     
     @IBAction func displayOnClick(sender: AnyObject) {
+        
         let number:Int? = Int(numberField.text!)
+        
         if number! % 2 == 0
+            
         {
+            
             self.displayLabel.text = " Number is Even "
+            
         }
+            
         else
+            
         {
+            
             self.displayLabel.text = " Number is Odd"
+            
         }
         
-        
-        
-        
-        
+
     }
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

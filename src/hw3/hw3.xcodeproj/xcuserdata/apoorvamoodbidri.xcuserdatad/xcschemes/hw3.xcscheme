@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44BFDACB1C333F7000C757FF"
-               BuildableName = "assignment3.app"
-               BlueprintName = "assignment3"
-               ReferencedContainer = "container:assignment3.xcodeproj">
+               BlueprintIdentifier = "44EBC5C81C3B1033002643BC"
+               BuildableName = "hw3.app"
+               BlueprintName = "hw3"
+               ReferencedContainer = "container:hw3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44BFDACB1C333F7000C757FF"
-            BuildableName = "assignment3.app"
-            BlueprintName = "assignment3"
-            ReferencedContainer = "container:assignment3.xcodeproj">
+            BlueprintIdentifier = "44EBC5C81C3B1033002643BC"
+            BuildableName = "hw3.app"
+            BlueprintName = "hw3"
+            ReferencedContainer = "container:hw3.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44BFDACB1C333F7000C757FF"
-            BuildableName = "assignment3.app"
-            BlueprintName = "assignment3"
-            ReferencedContainer = "container:assignment3.xcodeproj">
+            BlueprintIdentifier = "44EBC5C81C3B1033002643BC"
+            BuildableName = "hw3.app"
+            BlueprintName = "hw3"
+            ReferencedContainer = "container:hw3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44BFDACB1C333F7000C757FF"
-            BuildableName = "assignment3.app"
-            BlueprintName = "assignment3"
-            ReferencedContainer = "container:assignment3.xcodeproj">
+            BlueprintIdentifier = "44EBC5C81C3B1033002643BC"
+            BuildableName = "hw3.app"
+            BlueprintName = "hw3"
+            ReferencedContainer = "container:hw3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
