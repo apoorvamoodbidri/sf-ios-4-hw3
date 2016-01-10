@@ -24,16 +24,32 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func addOnClick(sender: AnyObject) {
+        
+        // MARK: Grading Comments
+        // number should be declared as a constant
+        // number doesn't need explicit type declaration
+        // let number = Int(numberField.text!)
+        
         var number:Int? = Int(numberField.text!)
         
         
         
         sum = sum + number!
         
+        // MARK: Grading Comments
+        // this line should have been left uncommented
+        // this line updates the sum label which is what you wanted
+        
         //self.displayLabel.text = String(sum)
         
+        
+        // MARK: Grading Comments
+        // these lines are not needed. 
+        // you don't want to update the text in the textfield
+        // unless perhaps you wanted to blank out the textfield with ""
         self.numberField.text = String(sum)
         
+        // this line isn't doing anything
         number = Int(numberField.text!)
         
     }
