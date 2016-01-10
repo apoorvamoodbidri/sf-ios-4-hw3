@@ -81,6 +81,10 @@ class ViewController: UIViewController {
             
         }
             
+            // MARK: Grading Comments
+            // Error in logic here. Should be >= 21. 
+            // Right now if the user types in 21, they see "You are too young"
+            
         else if age > 21
             
         {
